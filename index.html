@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Lucas Ferrari</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showPage('home')">Página Inicial</a></li>
+                <li><a href="#sobre" onclick="showPage('sobre')">Sobre</a></li>
+                <li><a href="#portfolio" onclick="showPage('portfolio')">Projetos</a></li>
+                <li><a href="#contato" onclick="showPage('contato')">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page-section">
+            <div class="text-content">
+                <h1><span class="highlight">Web</span> Developer</h1>
+                <p>Sou desenvolvedor focado em desenvolvimento web e mobile, com mais de 5 anos de atuação no mercado. Acredito no poder de transformação da tecnologia e isso me motiva a desenvolver produtos excepcionais.</p>
+                <a href="#sobre" class="btn" onclick="showPage('sobre')">Sobre mim</a>
+            </div>
+            <div class="image-content">
+                <img src="./img/lucas-imagem.webp" alt="Imagem de perfil">
+            </div>
+        </section>
+        <!-- Sobre Section -->
+        <section id="sobre" class="page-section">
+            <h2>Sobre mim</h2>
+            <p>Sou farmacêutico, estudante de análise e desenvolvimento de sistemas e professor de dança nas horas vagas.</p>
+            <p>Ao longo da minha vida, aprendi e desenvolvi habilidades que me auxiliam no meu dia a dia.</p>
+            <div id="Skills">
+                <h2 class="skill">Hardskills</h2>
+                <ul>
+                    <li>PowerBI</li>
+                    <li>Office 365</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <h2 class="skill">Softskills</h2>
+                <ul>
+                    <li>Boa Comunicação</li>
+                    <li>Trabalho em equipe</li>
+                    <li>Liderança em projetos</li>
+                    <li>Proatividade</li>
+                    <li>Resolução de problemas</li>
+                    <li>Pensamento Crítico</li>
+                    <li>Flexibilidade</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projetos Section -->
+        <section id="portfolio" class="page-section" style="display:none;">
+            <h2>Meus Projetos</h2>
+            <p>Detalhes sobre os projetos que você já desenvolveu.</p>
+        </section>
+
+        <!-- Contato Section -->
+        <section id="contato" class="page-section" style="display:none;">
+            <h2>Contato</h2>
+            <p>Formulário de contato ou informações para que as pessoas possam te encontrar.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Developed by @lucaslferrari</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
