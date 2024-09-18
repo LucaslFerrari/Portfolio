@@ -3,42 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Portfólio Lucas Ferrari</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home" onclick="showPage('home')">Página Inicial</a></li>
-                <li><a href="#sobre" onclick="showPage('sobre')">Sobre</a></li>
-                <li><a href="#portfolio" onclick="showPage('portfolio')">Projetos</a></li>
-                <li><a href="#contato" onclick="showPage('contato')">Contato</a></li>
+                <li><a href="#home" class="nav-link" data-page="home">Página Inicial</a></li>
+                <li><a href="#sobre" class="nav-link" data-page="sobre">Sobre</a></li>
+                <li><a href="#portfolio" class="nav-link" data-page="portfolio">Projetos</a></li>
+                <li><a href="#contato" class="nav-link" data-page="contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Home Section -->
-        <section id="home" class="page-section flex-space-between">
-            <div class="text-content">
-                <h3>Olá, eu sou</h3>
-                <h1><span class="highlight"> Lucas Ferrari</span></h1>
-                <p>Desenvolvedor apaixonado por criar soluções inovadoras.</p>
-                <a href="#sobre" class="btn" onclick="showPage('sobre')">Sobre mim</a>
-            </div>
-            <div class="image-content flex-end">
-                <img src="./img/lucas-imagem.webp" alt="Imagem de perfil">
+        <section id="home" class="page-section active">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h3>Olá, eu sou</h3>
+                    <h1><span class="highlight">Lucas Ferrari</span></h1>
+                    <p>Desenvolvedor apaixonado por criar soluções inovadoras.</p>
+                    <a href="#sobre" class="btn">Sobre mim</a>
+                </div>
+                <div class="image-content">
+                    <img src="./img/lucas-imagem.webp" alt="Imagem de perfil">
+                </div>
             </div>
         </section>
         
-        <!-- Sobre Section -->
         <section id="sobre" class="page-section">
             <h2><span class="highlight">Sobre</span> Mim</h2>
             <div id="texto-sobre">
-                <p>Farmacêutico, estudante de análise e desenvolvimento de sistemas e professor de dança nas horas vagas. Acredito no poder que a tecnologia tem para melhorar o mundo e isso me motiva a desenvolver e procurar soluções para sanar os problemas dos meus clientes. Ao longo da minha vida, aprendi e desenvolvi habilidades que me auxiliam no meu dia a dia.
-                </p>
+                <p>Farmacêutico, estudante de análise e desenvolvimento de sistemas e professor de dança nas horas vagas. Acredito no poder que a tecnologia tem para melhorar o mundo e isso me motiva a desenvolver e procurar soluções para sanar os problemas dos meus clientes. Ao longo da minha vida, aprendi e desenvolvi habilidades que me auxiliam no meu dia a dia.</p>
             </div>
 
             <div id="Skills" class="skills-container">
@@ -67,22 +66,18 @@
                     </ul>
                 </div>
             </div>
-            
         </section>
 
-        <!-- Projetos Section -->
         <section id="portfolio" class="page-section">
             <h2><span class="highlight">Meus</span> Projetos</h2>
             <div class="project">
                 <img src="./img/last-of-us.jpeg" alt="Screenshot do projeto The Last of Us">
                 <h3>Projeto: The Last of Us</h3>
                 <p>Um projeto desenvolvido em HTML, CSS e JavaScript que fala sobre a série "The Last of Us". Este projeto demonstra minhas habilidades em desenvolvimento web front-end e criação de interfaces interativas.</p>
-                <a href="https://github.com/LucaslFerrari/projeto-the-last-of-us" target="_blank">Ver no GitHub</a>
+                <a href="https://github.com/LucaslFerrari/projeto-the-last-of-us" target="_blank" class="btn">Ver no GitHub</a>
             </div>
         </section>
-        
 
-        <!-- Contato Section -->
         <section id="contato" class="page-section">
             <h2><span class="highlight">Contatos</span></h2>
             <div class="contact-info">
@@ -100,7 +95,6 @@
                 </ul>
             </div>
         </section>
-        
     </main>
 
     <footer>
