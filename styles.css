@@ -56,6 +56,7 @@ header ul li a {
 h1, h2 {
     font-size: 4rem;
     line-height: 1.2;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -68,7 +69,7 @@ h3 {
 }
 
 .text-content p, #texto-sobre p {
-    margin: 2rem 0;
+    margin: 1.2rem 0;
     font-size: 1.2rem;
     width: 80%;
 }
@@ -88,10 +89,22 @@ h3 {
     background-color: var(--secondary-color);
 }
 
-.image-content img {
+/*.image-content img {
     width: 250px;
     border-radius: 10px;
     margin-top: 10px;
+}*/
+
+.image-content {
+    position: relative; /* Permite que a imagem seja posicionada dentro deste container */
+}
+
+.image-content img {
+    position: absolute; /* Posiciona a imagem fora do fluxo normal da página */
+    right: 200px; /* Alinha a imagem para a direita, ajuste conforme necessário */
+    top: -200px; /* Alinha a imagem com o topo da seção */
+    width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    z-index: -1; /* Coloca a imagem atrás do texto */
 }
 
 footer {
@@ -111,7 +124,6 @@ footer a:visited {
 
 .page-section {
     padding: 100px 50px;
-    min-height: 100vh;
     display: none;
 }
 
@@ -129,7 +141,7 @@ footer a:visited {
 
 .skill-category {
     flex: 1;
-    min-width: 200px; /* Ajuste conforme necessário */
+    min-width: 200px; 
 }
 
 .skill-list {
